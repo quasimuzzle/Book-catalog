@@ -26,11 +26,11 @@ int main()
 		{
 		case 1: // Добавление записи
 			getchar();
-			cout << "Введите название книги: "; cin.getline(book.name, 50);
-			cout << "Введите автора книги: "; cin.getline(book.author, 50);
-			cout << "Введите количество страниц: "; cin >> book.numberOfPages;
-			cout << "Введите цену книги(руб): "; cin >> book.price;
-			cout << "Введите год выпуска: "; cin >> book.year;
+			cout << "Enter the title of the book: "; cin.getline(book.name, 50);
+			cout << "Enter the author of the book: "; cin.getline(book.author, 50);
+			cout << "Enter number of pages: "; cin >> book.numberOfPages;
+			cout << "nter the price of the book: "; cin >> book.price;
+			cout << "Enter the year of publication of the book: "; cin >> book.year;
 
 			add(doc); // Add.h
 			break;
@@ -44,7 +44,7 @@ int main()
 			f = exit(); 
 			break;
 		default:
-			cout << "Такой команды не существует, убедитесь в правильном написании" << endl;
+			cout << "This command does not exist, please make sure you spell it correctly. " << endl;
 			break;
 		}
 	}
